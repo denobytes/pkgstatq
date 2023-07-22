@@ -12,13 +12,13 @@ built on https://github.com/prdpx7/pkgstat
 to run:
 
 ```sh
-deno run --allow-net 'https://deno.land/x/pkgstatq/cli.ts' <package> <nonode|python|ruby>
+deno run --allow-env --allow-net 'https://deno.land/x/pkgstatq/cli.ts' <package> <nonode|python|ruby>
 ```
 
 example:
 
 ```
-deno run --allow-net 'https://deno.land/x/pkgstatq/cli.ts' deno node
+deno run --allow-env --allow-net 'https://deno.land/x/pkgstatq/cli.ts' deno node
 {
   name: "deno",
 ...
